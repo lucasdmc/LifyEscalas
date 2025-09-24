@@ -1,0 +1,42 @@
+.layout {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--white);
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 200px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--white);
+  overflow-y: auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+  
+  .main-content {
+    margin-left: 60px;
+  }
+  
+  .menu-label,
+  .sub-menu-label {
+    display: none;
+  }
+  
+  .menu-item,
+  .sub-menu-item {
+    justify-content: center;
+    padding: 12px;
+  }
+}
